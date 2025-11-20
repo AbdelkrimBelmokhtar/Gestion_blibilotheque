@@ -12,12 +12,12 @@ MAXI_PRET_ACTIF = 3                         #la limite d'emprunts en cours par l
 FORMAT_DE_SAUVEGARDE_DEFAUT = "csv"         #le format de sauvgarde choisi par defaut
 
 
-# Nettoyer un text en enlevant les espaces avec strip et mettant le tout en manisicule              Mohamed Firas saibi
+# Nettoyer un text en enlevant les espaces avec strip et mettant le tout en manisicule              
 def Nettoyer(S: str):
    return (S or "").strip().casefold()
 
 
-# Choisir le format de sauvegarde qu'on veut travailler dessusentre CSV et JSON                   Iliasse ben jilali
+# Choisir le format de sauvegarde qu'on veut travailler dessusentre CSV et JSON                   
 def choisir_format_sauvegarde(): 
     format = input("Quelle est la version de sauvegarde que tu souhaite ? csv ou json, (défaut=csv) : ").strip().lower()
     if format not in ("json", "csv"):
@@ -27,7 +27,7 @@ def choisir_format_sauvegarde():
     return format
 
 # -------------------------------
-# Classe Livre                                                                                    FAYSAL BOUARIR
+# Classe Livre                                                                                  
 # -------------------------------
 class Livre:
     #Compteur des id pour chaque livre  
@@ -1042,5 +1042,6 @@ def MenuApp():
 
 if __name__ == "__main__":
     MenuApp()
+
 
     
